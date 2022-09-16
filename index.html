@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculadora de Dias</title>
+</head>
+<body>
+    <form name="form_main" id="form">
+
+        <h1>CALCULADORA DE DIAS</h1>
+
+        <section class="container">
+            <label for="data_ini" class="data">Date Inicial: </label> 
+            <input name="data_ini" id="data_ini" type="date"> 
+                <br>
+            <label for="data_fim" class="data">Date Final: </label> 
+            <input name="data_fim" id="data_fim" type="date"> 
+                <br>
+            <label for="days">Dias passados: </label> 
+            <span id="days"></span> <br>
+    
+            <button type="button" onclick="contadorDias()">Contar</button>
+            <input type="reset" value="Limpar" onclick="contadorDias()">
+        </section>
+      </form>
+</body>
+</html>
